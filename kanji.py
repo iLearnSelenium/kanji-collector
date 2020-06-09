@@ -23,11 +23,11 @@ class Kanji:
     def __str__(self):
             return f'{{"radical": "{self.radical!s}","hint": {self.hint!s}}}'
 
-kanji = Kanji.fromJson(json.loads('{"radical": "一", "hint": {"hanviet": "Nhất", "kun": ["ひと-", "ひと.つ"], "on": ["イチ", "イツ"]}}'))
-print(kanji)
-print(f'{kanji!r}')
-print(f'{kanji!s}')
-print(kanji.__dict__)
-print(kanji.hint.__dict__)
-jsonData = json.dumps(kanji, default=lambda o: o.__dict__, ensure_ascii=False, indent=2).encode('utf8')
-print(jsonData.decode()) 
+# kanji = Kanji.fromJson(json.loads('{"radical": "一", "hint": {"hanviet": "Nhất", "kun": ["ひと-", "ひと.つ"], "on": ["イチ", "イツ"]}}'))
+# print(kanji)
+# print(f'{kanji!r}')
+# print(f'{kanji!s}')
+# print(kanji.__dict__)
+# print(kanji.hint.__dict__)
+# jsonData = json.dumps(kanji, default=lambda o: o.__dict__, ensure_ascii=False, indent=2).encode('utf8')
+# print(jsonData.decode()) 
